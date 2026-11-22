@@ -103,3 +103,39 @@
  .case-page .sommer-interim-compact .sommer-interim-shot figcaption {font-size:9px;padding:5px;}
  .case-page .case-final-feature .sommer-homepage-hero {break-inside:avoid;}
 }
+
+/* Finch Brands audit-led website transformation */
+.finch-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:26px 0 18px}
+.finch-metrics>div{background:#f2f6ff;border:1px solid #dbe5f3;border-radius:12px;padding:25px 22px}
+.finch-metrics strong{display:block;font:700 clamp(30px,4vw,49px)/1.05 Georgia,serif;color:#173c91;margin-bottom:8px}
+.finch-metrics span{display:block;color:#4c5c76;font:13px/1.55 Arial,sans-serif}
+.finch-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:28px}
+.finch-gallery figure{margin:0;min-width:0}
+.finch-gallery img{width:100%;height:auto;display:block;border:1px solid #dce4ef;box-shadow:0 8px 25px rgba(13,31,68,.09)}
+.finch-gallery figcaption{font:12px/1.6 Arial,sans-serif;color:#5b6b85;margin-top:10px}
+.finch-feature{background:#edf3fb}
+.finch-feature .case-image{margin:30px 0}
+.finch-feature .case-image img{width:100%;max-width:100%}
+.finch-writing{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:28px}
+.finch-writing article{border:1px solid #dce5f2;background:#fff;border-radius:12px;padding:24px;display:flex;flex-direction:column;gap:11px}
+.finch-writing h3{font:700 23px/1.25 Georgia,serif;color:#172d58;margin:0}
+.finch-writing p{font:15px/1.65 Arial,sans-serif;margin:0;color:#334260}
+.finch-writing a{font:700 14px Arial,sans-serif;color:#245bd6;margin-top:auto;text-decoration:underline;text-underline-offset:3px}
+.finch-tag{font:700 10px Arial,sans-serif;color:#4265a0;letter-spacing:.12em;text-transform:uppercase}
+.finch-process{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:30px 0}
+.finch-process div{background:#fff;border-top:4px solid #245bd6;padding:19px 14px;border-radius:4px;box-shadow:0 5px 16px rgba(13,31,68,.05);font:700 14px/1.5 Arial,sans-serif;color:#1b355f}
+.finch-process span{display:block;color:#71809b;font-size:12px;margin-bottom:8px}
+@media(max-width:760px){.finch-metrics{grid-template-columns:1fr 1fr}.finch-gallery,.finch-writing{grid-template-columns:1fr}.finch-process{grid-template-columns:1fr 1fr}}
+@media(max-width:430px){.finch-metrics{grid-template-columns:1fr}}
+
+/* Finch sample pages */
+.sample-hero{padding:78px 0 48px;background:#111a3b;color:#fff}.sample-hero .case-kicker{color:#d6ad77}.sample-hero h1{font-size:clamp(2.6rem,5vw,4.4rem);max-width:850px;line-height:1.1;margin:16px 0}.sample-sub{font-size:1.15rem;color:#d8dfef}.sample-main{max-width:810px;margin:0 auto;padding:60px 24px 95px}.sample-main p{font-size:1.08rem;line-height:1.85;margin:0 0 1.4em;color:#283044}.sample-main h2{font-size:1.35rem;margin:38px 0 12px;color:#111a3b}.sample-original{margin-top:45px;padding-top:25px;border-top:1px solid #d7dbe5}.sample-original a{font-weight:700}.sample-image{margin:0 0 36px}.sample-image img{width:100%;max-height:390px;object-fit:contain;border-radius:12px;background:#f4f5f8}.sample-back{display:inline-block;margin-top:35px;font-weight:700}.sample-main .sample-source-note{font-size:.9rem;color:#5d6878;margin-top:12px}@media(max-width:650px){.sample-hero{padding:52px 0 32px}.sample-main{padding:36px 20px 65px}}
+
+/* Finch sample pages */
+.sample-hero{padding:78px 0 48px;background:#111a3b;color:#fff}.sample-hero .case-kicker{color:#d6ad77}.sample-hero h1{font-size:clamp(2.6rem,5vw,4.4rem);max-width:850px;line-height:1.1;margin:16px 0}.sample-sub{font-size:1.15rem;color:#d8dfef}.sample-main{max-width:810px;margin:0 auto;padding:60px 24px 95px}.sample-main p{font-size:1.08rem;line-height:1.85;margin:0 0 1.4em;color:#283044}.sample-main h2{font-size:1.35rem;margin:38px 0 12px;color:#111a3b}.sample-original{margin-top:45px;padding-top:25px;border-top:1px solid #d7dbe5}.sample-original a{font-weight:700}.sample-image{margin:0 0 36px}.sample-image img{width:100%;max-height:390px;object-fit:contain;border-radius:12px;background:#f4f5f8}.sample-back{display:inline-block;margin-top:35px;font-weight:700}.sample-main .sample-source-note{font-size:.9rem;color:#5d6878;margin-top:12px}@media(max-width:650px){.sample-hero{padding:52px 0 32px}.sample-main{padding:36px 20px 65px}}
+
+/* Finch sample pages */
+.sample-hero{padding:78px 0 48px;background:#111a3b;color:#fff}.sample-hero .case-kicker{color:#d6ad77}.sample-hero h1{font-size:clamp(2.6rem,5vw,4.4rem);max-width:850px;line-height:1.1;margin:16px 0}.sample-sub{font-size:1.15rem;color:#d8dfef}.sample-main{max-width:810px;margin:0 auto;padding:60px 24px 95px}.sample-main p{font-size:1.08rem;line-height:1.85;margin:0 0 1.4em;color:#283044}.sample-main h2{font-size:1.35rem;margin:38px 0 12px;color:#111a3b}.sample-original{margin-top:45px;padding-top:25px;border-top:1px solid #d7dbe5}.sample-original a{font-weight:700}.sample-image{margin:0 0 36px}.sample-image img{width:100%;max-height:390px;object-fit:contain;border-radius:12px;background:#f4f5f8}.sample-back{display:inline-block;margin-top:35px;font-weight:700}.sample-main .sample-source-note{font-size:.9rem;color:#5d6878;margin-top:12px}@media(max-width:650px){.sample-hero{padding:52px 0 32px}.sample-main{padding:36px 20px 65px}}
+
+/* Finch sample pages */
+.sample-hero{padding:78px 0 48px;background:#111a3b;color:#fff}.sample-hero .case-kicker{color:#d6ad77}.sample-hero h1{font-size:clamp(2.6rem,5vw,4.4rem);max-width:850px;line-height:1.1;margin:16px 0}.sample-sub{font-size:1.15rem;color:#d8dfef}.sample-main{max-width:810px;margin:0 auto;padding:60px 24px 95px}.sample-main p{font-size:1.08rem;line-height:1.85;margin:0 0 1.4em;color:#283044}.sample-main h2{font-size:1.35rem;margin:38px 0 12px;color:#111a3b}.sample-original{margin-top:45px;padding-top:25px;border-top:1px solid #d7dbe5}.sample-original a{font-weight:700}.sample-image{margin:0 0 36px}.sample-image img{width:100%;max-height:390px;object-fit:contain;border-radius:12px;background:#f4f5f8}.sample-back{display:inline-block;margin-top:35px;font-weight:700}.sample-main .sample-source-note{font-size:.9rem;color:#5d6878;margin-top:12px}@media(max-width:650px){.sample-hero{padding:52px 0 32px}.sample-main{padding:36px 20px 65px}}
