@@ -77,18 +77,29 @@
 .case-gallery figure:first-child img{max-width:100%;width:100%}
 @media(max-width:720px){.sommer-interim-compact{grid-template-columns:repeat(2,minmax(0,1fr))}.case-gallery{grid-template-columns:1fr}.case-gallery figure:first-child{grid-column:auto}}
 
-/* Sommer final visual hierarchy: completed redesign is the primary feature. */
-.case-final-feature{background:#f3f7fc;border-top:1px solid #e1eaf6;border-bottom:1px solid #e1eaf6}
-.case-final-feature .sommer-homepage-hero{max-width:1120px;margin:32px auto 34px}
-.case-final-feature .sommer-homepage-hero img{display:block;width:100%;height:auto;object-fit:contain;box-shadow:0 18px 48px rgba(17,31,66,.16)}
-.case-final-feature .sommer-homepage-hero figcaption{margin-top:14px}
-@media(min-width:761px){
-.sommer-interim-sequence.sommer-interim-compact{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:100%}
-.sommer-interim-compact .sommer-interim-shot{box-shadow:0 3px 10px rgba(13,31,68,.06);border-radius:8px}
-.sommer-interim-compact .sommer-interim-shot figcaption{padding:8px 10px;font-size:11px;line-height:1.35}
+/* VERIFIED SOMMER GALLERY FIX 2026-11-21: override legacy one-column rule */
+.case-page .sommer-interim-sequence.sommer-interim-compact {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 12px !important;
+  max-width: none !important;
+  margin: 24px 0 !important;
 }
-@media(max-width:760px){
-.sommer-interim-sequence.sommer-interim-compact{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-.sommer-interim-compact .sommer-interim-shot figcaption{padding:8px;font-size:10px}
+.case-page .sommer-interim-compact .sommer-interim-shot {min-width:0; margin:0; border-radius:7px; box-shadow:0 2px 8px rgba(13,31,68,.06)}
+.case-page .sommer-interim-compact .sommer-interim-shot img {width:100%;height:auto;display:block}
+.case-page .sommer-interim-compact .sommer-interim-shot figcaption {padding:7px 9px;font-size:11px;line-height:1.35}
+.case-page .case-final-feature {background:#edf3fb;}
+.case-page .case-final-feature .sommer-homepage-hero {max-width:1120px;margin:32px auto;}
+.case-page .case-final-feature .sommer-homepage-hero img {width:100%;height:auto;display:block;object-fit:contain;}
+@media screen and (max-width:620px) {
+ .case-page .sommer-interim-sequence.sommer-interim-compact {grid-template-columns:repeat(2,minmax(0,1fr)) !important;}
 }
-@media(max-width:440px){.sommer-interim-sequence.sommer-interim-compact{grid-template-columns:1fr}}
+@media screen and (max-width:390px) {
+ .case-page .sommer-interim-sequence.sommer-interim-compact {grid-template-columns:1fr !important;}
+}
+@media print {
+ .case-page .sommer-interim-sequence.sommer-interim-compact {grid-template-columns:repeat(3,minmax(0,1fr)) !important;gap:8px !important;}
+ .case-page .sommer-interim-compact .sommer-interim-shot {break-inside:avoid;page-break-inside:avoid;}
+ .case-page .sommer-interim-compact .sommer-interim-shot figcaption {font-size:9px;padding:5px;}
+ .case-page .case-final-feature .sommer-homepage-hero {break-inside:avoid;}
+}
