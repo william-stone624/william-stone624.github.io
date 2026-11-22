@@ -39,3 +39,11 @@ To update the live GitHub Pages site, upload all the files in this package to th
 The Orion case study now uses the restored-image March 15, 2014 capture of The Orion Difference, plus an archive of Selected Recent Headlines and a cropped leadership biography. The case-study page and stylesheet have been updated. The original archived materials were preserved in the supplied PDFs, not altered. The case study distinguishes the site's published content from individually verified authorship.
 
 For an existing GitHub Pages site, upload **all files and folders inside this package** to the repository root. GitHub's browser uploader may not overwrite files cleanly when uploading folders; if it reports conflicts, use GitHub's individual file editor or delete the old file before uploading its replacement. The files that must be replaced are `orion-case-study.html`, `styles.css`, and `README.md`; the three new `.webp` files must be added under `assets/`. No changes to `index.html` are required for this revision.
+
+
+## Sommer Consulting case study
+
+`sommer-case-study.html` is the new case study. Its screenshot assets are named `assets/sommer-*.webp`. The homepage `index.html` has been updated to link to it.
+
+
+Sommer revision (November 2026): extracted desktop screenshots from user-supplied PDF, replaced portrait page images, added three editorial article cards, and refined captions. Upload all files and folders to repository root.
