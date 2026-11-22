@@ -63,3 +63,32 @@
 .editorial-copy a{font-weight:750;color:#2456b8;margin-top:auto;text-decoration:underline;text-underline-offset:3px}
 .case-image img,.case-gallery img{width:100%;height:auto;object-fit:contain;object-position:top center}
 @media(max-width:800px){.case-editorial .editorial-grid{grid-template-columns:1fr}}
+
+/* Sommer case study: give the completed redesign the visual emphasis. */
+.case-final-feature .sommer-homepage-hero{max-width:1050px;margin:34px auto 26px}
+.case-final-feature .sommer-homepage-hero img{width:100%;height:auto;display:block}
+.case-final-feature .case-roles{margin-top:24px}
+.sommer-interim-compact{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:none}
+.sommer-interim-compact .sommer-interim-shot{min-width:0;margin:0}
+.sommer-interim-compact .sommer-interim-shot img{width:100%;height:auto;display:block}
+.sommer-interim-compact .sommer-interim-shot figcaption{font-size:11px}
+.case-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.case-gallery figure:first-child{grid-column:span 2}
+.case-gallery figure:first-child img{max-width:100%;width:100%}
+@media(max-width:720px){.sommer-interim-compact{grid-template-columns:repeat(2,minmax(0,1fr))}.case-gallery{grid-template-columns:1fr}.case-gallery figure:first-child{grid-column:auto}}
+
+/* Sommer final visual hierarchy: completed redesign is the primary feature. */
+.case-final-feature{background:#f3f7fc;border-top:1px solid #e1eaf6;border-bottom:1px solid #e1eaf6}
+.case-final-feature .sommer-homepage-hero{max-width:1120px;margin:32px auto 34px}
+.case-final-feature .sommer-homepage-hero img{display:block;width:100%;height:auto;object-fit:contain;box-shadow:0 18px 48px rgba(17,31,66,.16)}
+.case-final-feature .sommer-homepage-hero figcaption{margin-top:14px}
+@media(min-width:761px){
+.sommer-interim-sequence.sommer-interim-compact{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:100%}
+.sommer-interim-compact .sommer-interim-shot{box-shadow:0 3px 10px rgba(13,31,68,.06);border-radius:8px}
+.sommer-interim-compact .sommer-interim-shot figcaption{padding:8px 10px;font-size:11px;line-height:1.35}
+}
+@media(max-width:760px){
+.sommer-interim-sequence.sommer-interim-compact{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.sommer-interim-compact .sommer-interim-shot figcaption{padding:8px;font-size:10px}
+}
+@media(max-width:440px){.sommer-interim-sequence.sommer-interim-compact{grid-template-columns:1fr}}
